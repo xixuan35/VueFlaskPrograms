@@ -1,0 +1,15 @@
+POST  http://127.0.0.1:5000/categorys/
+Content-Type: application/json
+
+{
+    "name":"iphone",
+    "level":3,
+    "pid":28
+
+}
+
+###获取商品分类列表
+GET http://127.0.0.1:5000/categorys/?level=3
+
+### 根据level获取分类分组信息
+GET http://127.0.0.1:5000/cate_grup/

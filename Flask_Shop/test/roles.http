@@ -1,0 +1,27 @@
+###测试角色列表获取
+GET http://127.0.0.1:5000/roles/
+
+
+###测试创建角色
+POST http://127.0.0.1:5000/roles/
+Content-Type: application/json
+
+{
+    "name":"星耀会员",
+    "desc":"VIP0"
+}
+
+###测试删除角色
+DELETE http://127.0.0.1:5000/role/1/
+
+###测试修改角色
+PUT  http://127.0.0.1:5000/role/5/
+Content-Type: application/json
+
+{
+    "name":"星耀管理员",
+    "desc":"VIP3"
+}
+
+###测试删除指定角色的权限
+GET http://127.0.0.1:5000/role/2/3/
